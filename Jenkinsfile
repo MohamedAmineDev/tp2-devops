@@ -17,7 +17,7 @@ pipeline{
         stage("Create the app image"){
           steps{
             dir("tp2-devops"){
-                sh "maven clean install"
+                sh "mvn clean install"
                 sh "docker build -t spring-devops-app-tp-2 ."
             }
           }  
