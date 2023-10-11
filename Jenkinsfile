@@ -1,6 +1,8 @@
 pipelines{
 agent any
+tools{
 maven 'maven'
+}
 stages{
 stage('Cleaning up The project'){
     steps{
