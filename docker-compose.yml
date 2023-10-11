@@ -1,0 +1,8 @@
+# My docker-compose file
+# In this app we have 1 service which is "web-app"
+version: '3'
+services:
+  web-app:
+    image: spring-devops-app-tp-2
+    ports:
+      - "8084:8084"
