@@ -29,19 +29,5 @@ pipeline{
             }
           }  
         }
-        stage("Wait for 10 seconds"){
-          steps{
-            dir("tp2-devops"){
-                sh "sleep 10"
-            }
-          }  
-        }
-        stage("Close the app"){
-          steps{
-            dir("tp2-devops"){
-                sh "docker compose down"
-            }
-          }  
-        }
     }
 }
